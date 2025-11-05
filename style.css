@@ -1,61 +1,166 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff8f0;
+/* Reset básico */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #ff914d;
-  color: white;
-  padding: 20px;
-  text-align: center;
+body {
+  font-family: 'Segoe UI', 'Merriweather', serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+/* Cabeçalho */
+header {
+  background: linear-gradient(to right, #ff914d, #ffb07c);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* Navegação */
 nav {
   background-color: #ffd4a3;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #ff914d;
+}
+
+/* Seções */
 section {
-  padding: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section h2 {
   background-color: #ffe5cc;
-  padding: 10px;
-  border-left: 5px solid #ff914d;
-  margin-top: 30px;
+  padding: 15px;
+  border-left: 6px solid #ff914d;
+  margin-bottom: 30px;
+  font-size: 2em;
+  border-radius: 5px;
 }
 
+/* Receitas */
 .receita {
-  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  animation: fadeIn 0.6s ease-in;
 }
 
 .receita img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 h3 {
   color: #ff914d;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed #ffd4a3;
+  padding-bottom: 5px;
 }
 
+h4 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #444;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Rodapé */
 footer {
   background-color: #ff914d;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+/* Botão voltar ao topo */
+.voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff914d;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.voltar-topo:hover {
+  background-color: #ffb07c;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
 }

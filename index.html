@@ -22,7 +22,7 @@
   <section id="doces">
     <h2>🍰 Receitas Doces</h2>
 
-    <!-- Receita 1 -->
+    <!-- Bolo de Cenoura -->
     <div class="receita" id="bolo">
       <h3>Bolo de Cenoura com Cobertura de Chocolate</h3>
       <h4>Ingredientes:</h4>
@@ -42,9 +42,14 @@
         <li>Asse a 180°C por 40 minutos.</li>
         <li>Cubra com chocolate derretido ou brigadeiro.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('bolo')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('bolo')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('bolo')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 2 -->
+    <!-- Pudim de Leite Condensado -->
     <div class="receita" id="pudim">
       <h3>Pudim de Leite Condensado</h3>
       <h4>Ingredientes:</h4>
@@ -62,9 +67,14 @@
         <li>Asse em banho-maria por 1 hora a 180°C.</li>
         <li>Deixe esfriar e leve à geladeira antes de desenformar.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('pudim')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('pudim')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('pudim')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 3 -->
+    <!-- Pudim de Pão -->
     <div class="receita" id="pudim-pao">
       <h3>Pudim de Pão</h3>
       <h4>Ingredientes:</h4>
@@ -84,14 +94,88 @@
         <li>Despeje na forma e asse em banho-maria por 1 hora a 180°C.</li>
         <li>Deixe esfriar, leve à geladeira e desenforme.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('pudim-pao')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('pudim-pao')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('pudim-pao')">📤 Compartilhar</button>
+      </div>
     </div>
-  </section>
+  </section><!-- Brigadeiro Gourmet -->
+<div class="receita" id="brigadeiro">
+  <h3>Brigadeiro Gourmet</h3>
+  <h4>Ingredientes:</h4>
+  <ul>
+    <li>1 lata de leite condensado</li>
+    <li>2 colheres de sopa de chocolate em pó</li>
+    <li>1 colher de sopa de manteiga</li>
+    <li>Granulado para enrolar</li>
+  </ul>
+  <h4>Modo de Preparo:</h4>
+  <ol>
+    <li>Cozinhe o leite condensado, chocolate e manteiga até desgrudar da panela.</li>
+    <li>Deixe esfriar, enrole e passe no granulado.</li>
+  </ol>
+  <div class="acoes">
+    <button onclick="imprimirReceita('brigadeiro')">🖨️ Imprimir</button>
+    <button onclick="favoritarReceita('brigadeiro')">⭐ Favoritar</button>
+    <button onclick="compartilharReceita('brigadeiro')">📤 Compartilhar</button>
+  </div>
+</div>
+
+<!-- Quindim -->
+<div class="receita" id="quindim">
+  <h3>Quindim</h3>
+  <h4>Ingredientes:</h4>
+  <ul>
+    <li>10 gemas</li>
+    <li>200 g de coco ralado</li>
+    <li>200 g de açúcar</li>
+    <li>2 colheres de sopa de manteiga</li>
+  </ul>
+  <h4>Modo de Preparo:</h4>
+  <ol>
+    <li>Misture todos os ingredientes até formar uma massa homogênea.</li>
+    <li>Coloque em forminhas untadas.</li>
+    <li>Asse em forno médio até dourar.</li>
+  </ol>
+  <div class="acoes">
+    <button onclick="imprimirReceita('quindim')">🖨️ Imprimir</button>
+    <button onclick="favoritarReceita('quindim')">⭐ Favoritar</button>
+    <button onclick="compartilharReceita('quindim')">📤 Compartilhar</button>
+  </div>
+</div>
+
+<!-- Torta de Limão -->
+<div class="receita" id="torta-limao">
+  <h3>Torta de Limão</h3>
+  <h4>Ingredientes:</h4>
+  <ul>
+    <li>200 g de biscoito triturado</li>
+    <li>100 g de manteiga derretida</li>
+    <li>1 lata de leite condensado</li>
+    <li>1 lata de creme de leite</li>
+    <li>Suco de 3 limões</li>
+    <li>Merengue para cobertura</li>
+  </ul>
+  <h4>Modo de Preparo:</h4>
+  <ol>
+    <li>Misture biscoito e manteiga para formar a base.</li>
+    <li>Bata leite condensado, creme de leite e suco de limão.</li>
+    <li>Coloque sobre a base e cubra com merengue.</li>
+    <li>Gratine rapidamente no forno.</li>
+  </ol>
+  <div class="acoes">
+    <button onclick="imprimirReceita('torta-limao')">🖨️ Imprimir</button>
+    <button onclick="favoritarReceita('torta-limao')">⭐ Favoritar</button>
+    <button onclick="compartilharReceita('torta-limao')">📤 Compartilhar</button>
+  </div>
+</div>
 
   <!-- ==================== SALGADOS ==================== -->
   <section id="salgados">
     <h2>🍛 Receitas Salgadas</h2>
 
-    <!-- Receita 1 -->
+    <!-- Feijoada -->
     <div class="receita" id="feijoada">
       <h3>Feijoada Tradicional</h3>
       <h4>Ingredientes:</h4>
@@ -112,9 +196,14 @@
         <li>Cozinhe até tudo estar bem macio e saboroso.</li>
         <li>Sirva com arroz, farofa e couve refogada.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('feijoada')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('feijoada')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('feijoada')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 2 -->
+    <!-- Torta de Frango -->
     <div class="receita" id="torta-frango">
       <h3>Torta de Frango de Liquidificador</h3>
       <h4>Ingredientes da Massa:</h4>
@@ -142,9 +231,14 @@
         <li>Em uma forma untada, despeje metade da massa, coloque o recheio e cubra com o restante.</li>
         <li>Leve ao forno preaquecido a 180°C por 40 minutos.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('torta-frango')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('torta-frango')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('torta-frango')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 3 -->
+      <!-- Bolinho de Arroz -->
     <div class="receita" id="bolinho-arroz">
       <h3>Bolinho de Arroz com Queijo</h3>
       <h4>Ingredientes:</h4>
@@ -162,9 +256,14 @@
         <li>Modele bolinhas e frite em óleo quente até dourar.</li>
         <li>Se preferir, asse em forno médio por 25 minutos.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('bolinho-arroz')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('bolinho-arroz')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('bolinho-arroz')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 4 -->
+    <!-- Esfiha de Carne -->
     <div class="receita" id="esfiha-carne">
       <h3>Esfiha de Carne</h3>
       <h4>Massa:</h4>
@@ -191,9 +290,14 @@
         <li>Abra pequenas porções da massa, recheie e feche em formato triangular.</li>
         <li>Pincele gema e asse em forno médio (200°C) por 25–30 minutos.</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('esfiha-carne')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('esfiha-carne')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('esfiha-carne')">📤 Compartilhar</button>
+      </div>
     </div>
 
-    <!-- Receita 5 -->
+    <!-- Escondidinho de Carne Seca -->
     <div class="receita" id="escondidinho-carne-seca">
       <h3>Escondidinho de Carne Seca</h3>
       <h4>Ingredientes:</h4>
@@ -214,9 +318,59 @@
         <li>Monte em camadas: metade do purê, carne seca, restante do purê e queijo por cima.</li>
         <li>Leve ao forno a 200°C até gratinar (20–25 minutos).</li>
       </ol>
+      <div class="acoes">
+        <button onclick="imprimirReceita('escondidinho-carne-seca')">🖨️ Imprimir</button>
+        <button onclick="favoritarReceita('escondidinho-carne-seca')">⭐ Favoritar</button>
+        <button onclick="compartilharReceita('escondidinho-carne-seca')">📤 Compartilhar</button>
+      </div>
     </div>
-
   </section>
+  <!-- Panqueca de Carne -->
+<div class="receita" id="panqueca">
+  <h3>Panqueca de Carne</h3>
+  <h4>Ingredientes:</h4>
+  <ul>
+    <li>Massa de panqueca pronta</li>
+    <li>Carne moída refogada</li>
+    <li>Molho de tomate</li>
+    <li>Queijo ralado</li>
+  </ul>
+  <h4>Modo de Preparo:</h4>
+  <ol>
+    <li>Recheie as panquecas com carne moída.</li>
+    <li>Coloque em uma travessa, cubra com molho e queijo.</li>
+    <li>Leve ao forno até gratinar.</li>
+  </ol>
+  <div class="acoes">
+    <button onclick="imprimirReceita('panqueca')">🖨️ Imprimir</button>
+    <button onclick="favoritarReceita('panqueca')">⭐ Favoritar</button>
+    <button onclick="compartilharReceita('panqueca')">📤 Compartilhar</button>
+  </div>
+</div>
+
+<!-- Quiche de Queijo e Presunto -->
+<div class="receita" id="quiche">
+  <h3>Quiche de Queijo e Presunto</h3>
+  <h4>Ingredientes:</h4>
+  <ul>
+    <li>Massa podre pronta</li>
+    <li>3 ovos</li>
+    <li>1 lata de creme de leite</li>
+    <li>200 g de queijo muçarela</li>
+    <li>200 g de presunto picado</li>
+  </ul>
+  <h4>Modo de Preparo:</h4>
+  <ol>
+    <li>Monte a massa em uma forma.</li>
+    <li>Misture ovos, creme de leite, queijo e presunto.</li>
+    <li>Despeje sobre a massa e asse até dourar.</li>
+  </ol>
+  <div class="acoes">
+    <button onclick="imprimirReceita('quiche')">🖨️ Imprimir</button>
+    <button onclick="favoritarReceita('quiche')">⭐ Favoritar</button>
+    <button onclick="compartilharReceita('quiche')">📤 Compartilhar</button>
+  </div>
+</div>
 
   <footer>
     <p>&copy; 2025 Receitas da Vovó. Todos os direitos reservados.</p>
@@ -224,5 +378,9 @@
 
   <a href="#topo" class="voltar-topo" aria-label="Voltar ao topo">⬆️</a>
 
+  <!-- Carregando o JS -->
+  <script src="script.js"></script>
 </body>
 </html>
+
+    

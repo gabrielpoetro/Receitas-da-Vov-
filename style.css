@@ -1,9 +1,5 @@
 /* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: 'Segoe UI', 'Merriweather', serif;
@@ -21,16 +17,8 @@ header {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
-header h1 {
-  font-size: 2.8em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-  font-style: italic;
-}
+header h1 { font-size: 2.8em; margin-bottom: 10px; }
+header p { font-size: 1.2em; font-style: italic; }
 
 /* Navegação */
 nav {
@@ -41,7 +29,6 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
 nav a {
   margin: 0 20px;
   text-decoration: none;
@@ -50,19 +37,19 @@ nav a {
   font-size: 1.1em;
   transition: color 0.3s ease;
 }
+nav a:hover { color: #ff914d; }
 
-nav a:hover {
-  color: #ff914d;
-}
-
-/* Seções */
+/* Layout em grid para receitas */
 section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
   padding: 40px 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
-
 section h2 {
+  grid-column: 1 / -1;
   background-color: #ffe5cc;
   padding: 15px;
   border-left: 6px solid #ff914d;
@@ -71,44 +58,48 @@ section h2 {
   border-radius: 5px;
 }
 
-/* Receitas */
+/* Cards de receitas */
 .receita {
-  margin-bottom: 50px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 0.6s ease-in;
 }
-
-.receita img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 15px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.receita:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
-
-h3 {
+.receita h3 {
   color: #ff914d;
   font-size: 1.6em;
-  margin-bottom: 10px;
-  border-bottom: 2px dashed #ffd4a3;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffd4a3;
+  padding-bottom: 8px;
 }
+.receita h4 { margin-top: 15px; font-size: 1.2em; color: #444; }
+.receita ul, .receita ol { margin-left: 20px; margin-top: 10px; }
+.receita li { margin-bottom: 6px; }
 
-h4 {
+/* Botões de ação */
+.acoes {
   margin-top: 15px;
-  font-size: 1.2em;
-  color: #444;
+  display: flex;
+  gap: 10px;
 }
-
-ul, ol {
-  margin-left: 20px;
-  margin-top: 10px;
+.acoes button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-li {
-  margin-bottom: 6px;
-}
+.acoes button:hover { background-color: #ffb07c; }
 
 /* Rodapé */
 footer {
@@ -118,6 +109,7 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   margin-top: 40px;
+  grid-column: 1 / -1;
 }
 
 /* Botão voltar ao topo */
@@ -134,10 +126,7 @@ footer {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: background-color 0.3s ease;
 }
-
-.voltar-topo:hover {
-  background-color: #ffb07c;
-}
+.voltar-topo:hover { background-color: #ffb07c; }
 
 /* Animação */
 @keyframes fadeIn {
@@ -147,20 +136,8 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2.2em;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  section h2 {
-    font-size: 1.6em;
-  }
-
-  h3 {
-    font-size: 1.4em;
-  }
+  header h1 { font-size: 2.2em; }
+  nav a { display: block; margin: 10px 0; }
+  section h2 { font-size: 1.6em; }
+  .receita h3 { font-size: 1.4em; }
 }
